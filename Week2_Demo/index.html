@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Katie Truchon, the coolest" >
+    <meta name="description" content="W2D2 Bio Assignment Demo" >
+    
+    <title>W2 | Bio</title>
+
+    <!--In-Document Styling-->
+    <style>
+        /*in here we write in CSS*/
+        /*Selecting in CSS & Javascript: select specific element(s) on a page
+            *by Element type        ex: body, div, p
+            *by ID attribute        ex: #wrapper, #nav, #footer
+            *by Class attribute     ex: coming in week 3
+
+        */
+
+        div {
+            border:1px solid black;
+            padding:10px; /*adds space between content & border of element */
+            margin:5px; /*adds space between elements and others*/
+        }
+
+        #nav, #footer {
+            background-color:lightgrey;
+        }
+    </style>
+</head>
+<body style="background-color:grey">
+    <div><!--this is the wrapper, and it wraps around all content-->
+    
+        <!--Header-->
+        <h1>Tyler Murphy</h1>
+
+        <!--Nav-->
+        <div id="nav">
+
+            <!--EXTERNAL LINK: a link to a page outside of your website-->
+            <a href="https://www.meca.edu" target="_blank">Visit MECA</a>
+
+            <!--Internal Link: a link to a page inside of your website/ root folder-->
+            <!--RELATIVE PATH-->
+            <a href="page2.html" target="_blank">Page 2</a>
+
+            <!--In Page Jump Link: a link to another section within the current page-->
+            <a href="#bio">Bio</a>
+            <a href="#schools">Schools</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#footer">Bottom of Page</a>
+
+        </div><!--/#nav-->
+
+        <!--Bio-->
+        <div id="bio">
+
+            <h2>About Me</h2>
+
+            <p>Can a man still be <b>brave</b> if he’s afraid? That is the <i>only time</i> a man can be brave.A forked purple lightning bolt, on black field speckled with four-pointed stars. Winter is coming. You know nothing, Jon Snow. Pay the iron price. Unbowed, Unbent, Unbroken. It's <b><u>ten thousand miles</u></b> between Kings landing and the wall. It's ten thousand miles between Kings landing and the wall.</p>
+
+            <!--REMOTE image links (absolute paths) Bad!!!!!-->
+            <img src="https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4LIHECOUfySNUtikBUgTfO/9616f6064705d3d713bbd37e25389060/r6m_sidepromo.jpg" alt="Rainbow Six Siege" style="width:500px" 
+            title="Hi">
+
+            <!--Relative image link (relative path) resource must be stored in the root folder-->
+            <img src="images/stormsEnd.jpg" alt="Storm's End castle in Spring time" style="width:500px">
+
+        </div><!--/#bio-->
+
+        <hr>
+
+        <!--Schools-->
+        <div id="schools">
+
+        </div><!--/#schools-->
+
+            <h2>Schools</h2>
+
+            <ol>
+                <li>Halifax Elementary School</li>
+                <li>Silver Lake Regional Middle School</li>
+                <li>Silver Lake Regional High School</li>
+                <li>New England Institute of Technology</li>
+            </ol>
+
+            <img src="https://www.slrsd.org/application/files/4914/5141/5557/BuildingPic_02.jpg" alt="Silver Lake Regional High School">
+
+        <hr>
+
+        <!--Hobbies-->
+        <div id="hobbies">
+
+            <h2>Hobbies</h2>
+
+            <ul>
+                <li>Video Games</li>
+                <li>Hunting</li>
+                <li>Football</li>
+            </ul>
+
+        </div><!--/#hobbies-->
+
+        <!--Footer-->
+        <div id="footer">
+
+            <a href="#nav">Back to Top</a>
+            <br>
+            <p>&copy; T Murphy  | SE111 | Winter 2023</p>
+            <br>
+            <!--Validation Screenshot-->
+            <img src="images/IndexValidation.PNG" alt="validation of page" style="width:100%">
+
+        </div><!--/#footer--> 
+    </div>
+</body>
+</html>
