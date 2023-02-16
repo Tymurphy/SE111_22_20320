@@ -12,23 +12,23 @@
 
     <script>
 
-    var payRate = (input("How many hours did you work? "))
-hoursWorked = float(input("What is you hourly pay?$ "))
-tax = float(input("What is your tax rate?(20% = 20) "))
+        
 
-tax = tax / 100
-gross = hoursWorked * payRate
-taxes = tax * gross
-netPay = gross - taxes
+        var payRate = Number(prompt("How many hours did you work?"))
+        var hoursWorked = Number(prompt("What is you hourly pay? $"))
+        var tax = Number(prompt("What is your tax rate?(20% = 20)"))
 
-print()
-print()
-print("Your gross pay is is:$ {0:7.2f}" .format(gross))
-print("Your tax is:         $ {0:7.2f}" .format(taxes))
-print("---------------------------------------------")
-print("Your net pay is:     $ {0:7.2f}" .format(netPay))
+        var tax = tax / 100
+        var gross = hoursWorked * payRate * 2
+        var taxes = tax * gross
+        var netPay = gross - taxes
 
-print("\nCongrats!!!")
+
+        console.log(`Your gross pay is: ${gross.toFixed(2)}`) 
+        console.log(`Your tax is: ${taxes.toFixed(2)}`)
+        console.log(`Your net pay is: ${netPay.toFixed(2)}`)
+        alert(`${gross.toFixed(2)} - ${taxes.toFixed(2)} = ${netPay.toFixed(2)}`)
+        alert("\nCongrats!!!")
 
     </script>
     
