@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W6 | Intro to JS</title>
+</head>
+<body>
+
+    <h1>Week 6 Intro Demo | JavaScript</h1>
+
+    <script>
+        
+        var num1 = 10
+        var num2 = 7
+
+        var sum = num1 + num2
+
+        console.log(num1) //shown in browser console
+        
+        console.log(num1, num2, sum)
+
+        console.log("hello world!")
+
+        console.log(num1 + " + " + num2 + " = " + sum)
+
+        console.log(`${num1} + ${num2} = ${sum}`)
+
+        console.log(`${num1} + ${num2} = ${sum.toFixed(2)}`)
+
+        alert(`The sum is: ${sum}!`) //shown in browser as pop up
+
+        //\t --> tab space, \n --> new line
+
+        var tip = Number(prompt(`Hello world! \nThe sum is ${sum.toFixed(2)}! \nEnter a number to add as a tip: $`))
+
+        var total = sum + tip
+        alert(`Your total with tip is now: ${total.toFixed(2)}`)
+
+        
+
+    </script>
+
+</body>
+</html>
