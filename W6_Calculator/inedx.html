@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6 | Pay calculator</title>
+</head>
+<body>
+
+    <h1> Pay Calculator</h1>
+
+    <script>
+
+    var payRate = (input("How many hours did you work? "))
+hoursWorked = float(input("What is you hourly pay?$ "))
+tax = float(input("What is your tax rate?(20% = 20) "))
+
+tax = tax / 100
+gross = hoursWorked * payRate
+taxes = tax * gross
+netPay = gross - taxes
+
+print()
+print()
+print("Your gross pay is is:$ {0:7.2f}" .format(gross))
+print("Your tax is:         $ {0:7.2f}" .format(taxes))
+print("---------------------------------------------")
+print("Your net pay is:     $ {0:7.2f}" .format(netPay))
+
+print("\nCongrats!!!")
+
+    </script>
+    
+</body>
+</html>
