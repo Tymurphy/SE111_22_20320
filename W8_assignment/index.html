@@ -36,17 +36,13 @@
     <script>
 	
 		//Store the elements (tags) in variables
-		document.querySelector(`#first`)
+		var fname = document.querySelector(`#first`)
+		var lname = document.querySelector(`#last`)
 		
 
 		//Make an array to store the people
 		var people = []
-		people.push(
-            prompt(`Enter a name to add to the array: `)
-            )
-        console.log(people)
-
-
+		
 		//Make the button clickable. When clicked it calls the calcAndDisplay function.
 		document.querySelector(`#button`).addEventListener(`click`, calcAndDisplay)
 		
@@ -64,7 +60,6 @@
 			LAST: Targaryen
 			_________________________
 		--------------------------------------------------------*/
-		
 
 		function calcAndDisplay(e)
 		{
@@ -74,23 +69,17 @@
 				//2. last: will be a string that uses the last Input's value
 
             var person = {
-				first: ``,
-            	last: ``,
-
-
+				first: fname.value,
+            	last: lname.value,
 
             }//end of person object
 
-
-
-
 			//Add the person object into the people array by using the .push() array method.
-			people.push()
-            	prompt(`Enter a name to add to the array: `)
+			people.push(person)
         	console.log(people)
 
 			//Bubble sort people on the last name
-			for(let i=0; i < people.length-1; i++)
+			for(let index=0; index < people.length-1; index++)
 			{
 				for(let j=0; j < people.length-1; j++)
 				{
@@ -114,9 +103,9 @@
             {
 
 				//Loop through each property in the object
-				for(key in people[i])
+				for(key in people[index])
                 {
-					output += `<p><b>${key}:</b> ${humans[i][key]} </p>`
+					output += `<p><b>${key}:</b> ${people[index][key]} </p>`
 					//The output should use the key set to uppercase using the .toUpperCase() String method as a title and the value of the key.
 					//Output will resemble:
 					//FIRST: Ivan
@@ -124,7 +113,7 @@
 
                 }
                 //add a <hr> to the output at the end of this outter loop so a horizontal rule is displayed inbetween each person being displayed to the screen.
-				 output += `<br>`
+				 output += `<hr>`
 
 
 			}//end of loop going through people array to edit 'output'
@@ -132,8 +121,6 @@
 				//log the output string
 				//replace the outputDiv's inner HTML with the output string
 				document.querySelector(`#output`).innerHTML = output
-
-
 
 		}
 	
